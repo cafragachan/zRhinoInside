@@ -11,17 +11,17 @@ public class RhinoInside_vBeta : ModuleRules
 
     private string AerDNAPath
     {
-        get { return Path.GetFullPath("D:/Repos/AerDNA"); }
+        get { return Path.GetFullPath("C:/Users/cesar.fragachan/Documents/AerDNA"); }
     }
 
     private string RhinoPath
     {
-        get { return Path.GetFullPath("C:/Program Files/Rhino 6 SDK"); }
+        get { return Path.GetFullPath("C:/Program Files/Rhino 7 SDK"); }
     }
 
     private string RhinoDLL
     {
-        get { return Path.GetFullPath("C:/Program Files/Rhino 7 WIP"); }
+        get { return Path.GetFullPath("C:/Program Files/Rhino 7"); }
         //get { return Path.GetFullPath("D:/DOCUMENTS/UNREAL/RhinoInside/RhinoInside_vBeta/Binaries"); }
     }
 
@@ -77,9 +77,6 @@ public class RhinoInside_vBeta : ModuleRules
             RuntimeDependencies.Add(RhinoDLLPath + "RhinoCore.dll");
             PublicDelayLoadDLLs.Add("RhinoLibrary.dll");
             RuntimeDependencies.Add(RhinoDLLPath + "RhinoLibrary.dll");
-            // PublicDelayLoadDLLs.Add("rhcommon_c.dll");
-            //RuntimeDependencies.Add(RhinoDLLPath + "rhcommon_c.dll");
-
 
             PublicAdditionalLibraries.Add(Path.Combine(AerDNALibrariesPath, "AerDNA" + ".lib"));
             PublicAdditionalLibraries.Add(Path.Combine(RhinoLibrariesPath, "opennurbs" + ".lib"));
